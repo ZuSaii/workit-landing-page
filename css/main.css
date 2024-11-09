@@ -4,22 +4,12 @@
     --white-pink: #FCF8FF;
 }
 
-
 * {
     box-sizing: border-box;
-
 }
 
 body {
     font-family: "Manrope", sans-serif;
-}
-
-
-.hero-section {
-    padding: 56px;
-    background-color: var(--purple);
-    height: 608px;
-    position: relative;
 }
 
 header {
@@ -35,7 +25,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .a-apply-access {
@@ -46,6 +35,33 @@ header {
     font-size: 16px;
     font-weight: 700;
     line-height: 32px;
+    transition-duration: 0.4s;
+}
+
+.a-apply-access:hover {
+    color: var(--green);
+    transform: translateY(-2px);
+}
+
+
+.hero-section {
+    padding: 56px;
+    background-color: var(--purple);
+    height: 608px;
+    position: relative;
+    margin-bottom: 80px;
+    border-radius: 0px 0px 100% 100% / 30%;
+}
+
+.hero-section::before {
+    content: " ";
+    position: absolute;
+    background-color: #FCF8FF;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    left: 0px;
+    top: 200px;
 }
 
 .hero {
@@ -53,7 +69,6 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    
 }
 
 .main-title {
@@ -81,28 +96,178 @@ h1 {
     text-decoration: none;
     background-color: var(--green);
     color: var(--purple);
+    font-size: 18px;
     padding: 12px 32px;
     font-weight: 700;
     line-height: 32px;
+    transition: all 0.4s;
+}
+
+.title-learn:hover {
+    border: solid 1px var(--green);
+    color: var(--green);
+    background-color: var(--purple);
 }
 
 .phone {
     position: absolute;
     bottom: -200px ;
-
 }
 
-.big-green-circle {
+.first-group-green-circle {
     position: absolute;
     left: 0px;
 }
 
-.normal-green-circle {
+.second-group-green-circle {
     position: absolute;
     right: 0px;
 }
 
-.ornamental-one {
+.value-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCF8FF;
+    border-radius: 0px 0px 100% 100% / 30%;
     width: 100%;
+    height: 800px;
+}
+
+.value-content {
+    width: 80%;
+    display: flex;
+}
+
+.first-value,
+.second-value,
+.third-value {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 33%;
+    color: var(--purple);
+    margin-right: 32px;
+}
+
+.number {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 56px;
+    height: 56px;
+    font-family: "Fraunces 144pt", serif;
+    border: solid 1px;
+    border-radius: 99px;
+    margin-bottom: 56px;
+}
+
+.first-value h3,
+.second-value h3,
+.third-value h3 {
+    font-family: "Fraunces 144pt", serif;
+    font-size: 32px;
+    font-weight: 600px;
+    line-height: 38px;
+    margin: 0;
+    margin-bottom: 28px;
+}
+
+.first-value p,
+.second-value p,
+.third-value p {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.cta-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+}
+
+.cta-container {
+    display: flex;
+    width: 70%;
+    margin-top: auto;
+    height: 80%;
+    position: relative; 
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.profile-picture {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.third-group-green-circle {
+    position: absolute;
+    bottom: -64px;
+    right: 104px;
+}
+
+.cta-content {
+    color: white;
     background-color: var(--purple);
+    width: 70%;
+    padding: 64px;
+    border-radius: 0px 50px 0px 50px;
+}
+
+.cta-content h2 {
+    margin: 0;
+    font-family: "Fraunces 144pt", serif;
+    font-weight: 600;
+    line-height: 67px;
+    font-size: 56px;
+    margin-bottom: 32px;
+}
+
+.cta-content p {
+    margin: 0;
+    line-height: 32px;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.cta-content a {
+    margin: 0;
+    text-decoration: none;
+    background-color: var(--green);
+    color: var(--purple);
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    transition: all 0.4s;
+}
+
+.cta-content a:hover {
+    border: solid 1px var(--green);
+    color: var(--green);
+    background-color: var(--purple);
+}
+
+footer {
+    width: 100%;
+    height: 324px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-logo {
+    padding: 8px;
+    margin-bottom: 56px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
 }
