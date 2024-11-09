@@ -47,7 +47,7 @@ header {
 .hero-section {
     padding: 56px;
     background-color: var(--purple);
-    height: 608px;
+    height: 770px;
     position: relative;
     margin-bottom: 80px;
     border-radius: 0px 0px 100% 100% / 30%;
@@ -111,7 +111,7 @@ h1 {
 
 .phone {
     position: absolute;
-    bottom: -200px ;
+    bottom: -160px ;
 }
 
 .first-group-green-circle {
