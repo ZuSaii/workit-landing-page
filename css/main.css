@@ -1,0 +1,108 @@
+:root {
+    --green:#44FFA1;
+    --purple:#24053E;
+    --white-pink: #FCF8FF;
+}
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+
+.hero-section {
+    padding: 56px;
+    background-color: var(--purple);
+    height: 608px;
+    position: relative;
+}
+
+header {
+    background-color: var(--purple);
+    padding-top: 56px;
+}
+
+.main-header {
+    background-color: var(--purple);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.a-apply-access {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: var(--green);
+    text-underline-offset: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.main-title {
+    width: 634px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+    color: white;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 80px;
+    margin-bottom: 40px;
+}
+
+.main-title span {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--green);
+    text-underline-offset: 8px;
+}
+
+.title-learn {
+    text-decoration: none;
+    background-color: var(--green);
+    color: var(--purple);
+    padding: 12px 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.phone {
+    position: absolute;
+    bottom: -200px ;
+
+}
+
+.big-green-circle {
+    position: absolute;
+    left: 0px;
+}
+
+.normal-green-circle {
+    position: absolute;
+    right: 0px;
+}
+
+.ornamental-one {
+    width: 100%;
+    background-color: var(--purple);
+}
