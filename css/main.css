@@ -208,14 +208,14 @@ h1 {
 
 .third-group-green-circle {
     position: absolute;
-    bottom: -64px;
+    bottom: -80px;
     right: 104px;
 }
 
 .cta-content {
     color: white;
     background-color: var(--purple);
-    width: 70%;
+    width: 75%;
     padding: 64px;
     border-radius: 0px 50px 0px 50px;
 }
@@ -271,3 +271,115 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width:1300px) {
+    .first-group-green-circle,
+    .second-group-green-circle,
+    .third-group-green-circle {
+        width: 1%;
+        opacity: 0%;
+    }
+
+    .value-section {
+        height: 100%;
+        margin-top: 200px;
+        margin-bottom: 160px;
+    }
+
+    .value-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-value,
+    .second-value,
+    .third-value {
+        margin: 0;
+        margin-bottom: 140px;
+        width: 60%;
+    }
+
+    .third-value {
+        margin: 0;
+    }
+
+    .profile-picture {
+        width: 50%;
+        left: 25%;
+    }
+
+    .cta-container {
+        height: 100%;
+    }
+
+    .cta-content {
+        width: 100%;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    @media (max-width: 780px) {
+        .phone {
+            width: 1%;
+            opacity: 0%;
+        }
+
+        .profile-picture {
+            width: 300px;
+            left: 20%;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        .first-value,
+        .second-value,
+        .third-value {
+        width: 80%; 
+        }
+
+        .cta-content {
+            padding: 40px;
+        }
+
+        .cta-content h2 {
+            font-size: 44px;
+            margin-bottom: 12px;
+        }
+
+        .cta-content p {
+            font-size: 16px;
+        }
+
+    }
+        
+    @media (max-width: 500px) {
+        .cta-content {
+            padding: 32px;
+        }
+
+        .cta-content h2 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+ 
+        .cta-content p {
+            font-size: 14px;
+        }
+
+        .cta-content a {
+            font-size: 12px;
+        }
+
+        .profile-picture {
+            width: 90%;
+            left: 5%;
+        }
+
+    }
+
+}
+
+
